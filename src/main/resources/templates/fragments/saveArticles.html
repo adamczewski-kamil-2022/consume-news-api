@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="saveArticles">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Articles</h3>
+                </div>
+            </div>
+            <form action="#" th:action="@{/saveArticles}" method="post">
+                <input type="text" name="fileName" placeholder="Enter file name..."/>
+                <input type="submit" class="btn btn-danger" value="Save to file"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
